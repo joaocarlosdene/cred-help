@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background-color: #080025;
+    color: white;
+}
+.carousel-item{
+    background-position: center;
+    background-size: cover;
+    font-weight: 600;
+    color: #080025;
+}
+.titulo{
+    padding: 2rem;
+    background-color: #080025;
+    margin-top: 100px;
+}
+.orcamento{
+    background-color: whitesmoke;
+    padding: 3rem;
+    border-radius: 10px;
+}
+.main-btn{
+    background-color: #0D6EFD;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.6rem 5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    border: 3px solid transparent;
+    transition: 0.5s;
+}
+.main-btn:hover{
+    background-color: transparent;
+    border-color: #0D6EFD;
+    color: #080025;
+}
+i{
+    color: green;
+}
+#icone-bloco{
+    font-size: 2rem;
+    color: #C2002D;
+}
