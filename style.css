@@ -24,11 +24,7 @@ body{
     background-color: #080025;
     margin-top: 100px;
 }
-.orcamento{
-    background-color: whitesmoke;
-    padding: 3rem;
-    border-radius: 10px;
-}
+
 .main-btn{
     background-color: #0D6EFD;
     color: white;
@@ -51,4 +47,46 @@ i{
 #icone-bloco{
     font-size: 2rem;
     color: #C2002D;
+}
+/*------simulador page------*/
+.simulador{
+    margin-top: 105px;
+    background-color: #080025;
+    color: white;
+    padding: 3rem;
+}
+/*--------Sucesso page------*/
+.whatsapp-btn{
+    background-color:  #34af23 ;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.6rem 1.6rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    border: 3px solid transparent;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+.whatsapp-btn:hover{
+    background-color: transparent;
+    border-color: #34af23 ;
+    color: #34af23 ;
+}
+.inicio-btn{
+    background-color:  #080025;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.6rem 1.6rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    border: 3px solid transparent;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+.inicio-btn:hover{
+    background-color: transparent;
+    border-color:#080025 ;
+    color: #080025;
 }
