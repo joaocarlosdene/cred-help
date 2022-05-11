@@ -48,6 +48,11 @@ i{
     font-size: 2rem;
     color: #C2002D;
 }
+.main-title{
+    border-bottom: 3px solid rgba(51, 51, 51, 0.158);
+    margin-bottom: 1rem;
+}
+
 /*------simulador page------*/
 .simulador{
     margin-top: 105px;
@@ -89,4 +94,19 @@ i{
     background-color: transparent;
     border-color:#080025 ;
     color: #080025;
+}
+/*--------Rodape---------*/
+.rodape{
+    background-color: #080025;
+    color: whitesmoke;
+    padding: 2rem;
+}
+.rodape1{
+    background-color: #080025;
+    color: whitesmoke;
+    padding: 0.8rem;
+    font-size: 0.7rem;
+}
+.fas{
+    color:#70D7D3;
 }

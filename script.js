@@ -1,3 +1,6 @@
+
+
+/*------RANGE----------*/
 var slider = document.getElementById("customRange3");
 var output = document.getElementById("demo");
 output.innerHTML = slider.value; // Display the default slider value
