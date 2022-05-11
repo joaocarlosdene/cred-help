@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Progress Bar -->
     <script src="progressbar.min.js"></script>
-    
-</head>
+    <style>.cookieConsentContainer{z-index:999;width:100%; text-align: center;min-height:20px;box-sizing:border-box;padding:50px 50px 50px 50px;background:#0a0a0ae0;overflow:hidden;position:fixed;bottom:0;right:0;display:none}.cookieConsentContainer .cookieTitle a{font-family:OpenSans,arial,sans-serif;color:#fff;font-size:22px;line-height:20px;display:block}.cookieConsentContainer .cookieDesc p{margin:0;padding:0;font-family:OpenSans,arial,sans-serif;color:#fff;font-size:13px;line-height:20px;display:block;margin-top:10px}.cookieConsentContainer .cookieDesc a{font-family:OpenSans,arial,sans-serif;color:#fff;text-decoration:underline}.cookieConsentContainer .cookieButton a{display:inline-block;font-family:OpenSans,arial,sans-serif;color:#fff;font-size:14px;font-weight:700;margin-top:14px;background:#000;box-sizing:border-box;padding:15px 24px;text-align:center;transition:background .3s}.cookieConsentContainer .cookieButton a:hover{cursor:pointer;background:#3e9b67}@media (max-width:980px){.cookieConsentContainer{bottom:0!important;left:0!important;width:100%!important}}</style>
+  </head>
 <body>
     <div class="header fixed-top">
         <div class="container">
@@ -25,10 +25,10 @@
                               <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                                 <div class="navbar-nav text-center" >
                                   <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
-                                    <a class="nav-link" href="">Sobre</a>
-                                  <a class="nav-link" href="">Contato</a>
-                                  <a class="nav-link" href=""><span style="font-weight:bold;">Simule Agora</span></a>
+                                    <a class="nav-link"  href="#servicos" >Serviços</a>
+                                    <a class="nav-link" href="#sobre">Sobre</a>
+                                  <a class="nav-link" href="#contato">Contato</a>
+                                  <a class="nav-link" href="simulacao.html"><span style="font-weight:bold;">Simule Agora</span></a>
                                 </div>
                               </div>
                 </div>
@@ -36,7 +36,7 @@
         </div>
         
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner" >
         <div class="carousel-item active">
             <div class="row titulo d-flex align-items-center">
                 <div class="text-center" style="color: whitesmoke;">
@@ -46,12 +46,12 @@
                     <H5>Dinheiro na conta em 1 dia útil.</H5>
                     <p></p><a href="simulacao.html"><button class="main-btn">Simule Agora</button></a><p></p>
                     <p>OU</p>
-                    <p></p><a href="https://wa.me/message/GLUJ7ANRUBSHM1" target="_blank"><button style="background-color:green; padding: 0.7rem 4rem" class="main-btn">Contate-nos <i style="color: white;" class="fab fa-whatsapp"></i></button></a>
+                    <p id="servicos"></p><a href="https://wa.me/message/GLUJ7ANRUBSHM1" target="_blank"><button style="background-color:green; padding: 0.7rem 4rem" class="main-btn">Contate-nos <i style="color: white;" class="fab fa-whatsapp"></i></button></a>
                 </div>
               </div>
         </div>
     </div>
-    <div class="solucoes container text-center">
+    <div class="solucoes container text-center" >
       <div class="col-12 col-md-5 justify-content-center container">
       <h3 class="main-title" style="padding: 1rem; margin-top: 1rem;">Nossas Especialidades.</h3>
       </div>
@@ -97,15 +97,17 @@
             </div>
           </div>
           <div class="link-bloco col-11 col-md-4 text-center">
-            <div >
+            
               <i id="icone-bloco" class="fas fa-home"></i>
               <p>Empréstimo com Garantia de Imóvel</p>
-              <p style="text-align: justify;font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans'; font-size:1rem; font-weight: 300; ">Ele funciona como um empréstimo pessoal, mas com um diferencial: a instituição que dá o crédito utiliza algum bem de quem contrata o empréstimo, como imóvel, como garantia do pagamento. Isso significa que caso o pagamento das parcelas do empréstimo não seja realizado, o imóvel pode ser tomado.</p>
+              <p id="sobre" style="text-align: justify;font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans'; font-size:1rem; font-weight: 300; " >Ele funciona como um empréstimo pessoal, mas com um diferencial: a instituição que dá o crédito utiliza algum bem de quem contrata o empréstimo, como imóvel, como garantia do pagamento. Isso significa que caso o pagamento das parcelas do empréstimo não seja realizado, o imóvel pode ser tomado.</p>
+                          
             </div>
           </div>
     </div>
     </div>
-    <div class="sobre container">
+    
+    <div class="sobre container" >
       <div class="col-12 col-md-5 justify-content-center container">
         <h3 style="padding: 1rem;" class="text-center main-title">Sobre a <span style="color: #398f91;" >CRED HELP</span></h3>
       </div>
@@ -168,18 +170,73 @@
 
 
     </div>
-    <div class="container cards">
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima voluptate in repellendus quas at quis minus eius accusantium optio cupiditate placeat dolor rerum dicta ad ipsa officia laboriosam, tenetur distinctio?</p>
+    <div class="container cards clientes">
+      <div class="col-12 col-md-5 justify-content-center container">
+        <h3 style="padding: 1rem;" class="text-center main-title"> Avaliações de Clientes </h3>
+      </div>
+
+      <div id="carouselExampleDark" class="carousel carousel-dark  slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="col-12 col-md-4">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima voluptate in repellendus quas at quis minus eius accusantium optio cupiditate placeat dolor rerum dicta ad ipsa officia laboriosam, tenetur distinctio?</p>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000" style="height: 600px;background-image: url('images/fundo-branco-liso2-1024x1024.webp');">
+            <div class="container titulo-carousel">
+              <img style="border-radius: 50%; width:300px;" src="images/Clientes/Jhenifer.jpeg" alt="">
+              <h5>Jhenifer Fogaça - FGTS</h5>
+              <div class="stars" style="padding: 1rem;">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+              </div>
+              <p style="text-align: center;" >"O dinheiro caiu da conta, foi muito rápido!!!</br>
+                Muito obrigadaaaa ❤️ </br>
+                Atendimento incrível de sempre 😍 "</br>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000" style="height: 600px;background-image: url('images/fundo-branco-liso2-1024x1024.webp');">
+            <div class="container titulo-carousel">
+              <img style="border-radius: 50%; width:300px;" src="images/Clientes/Daniele.jpeg" alt="">
+              <h5>Daniele Scheneider FGTS</h5>
+              <div class="stars" style="padding: 1rem;">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+              </div>
+              <p>Atendimento maravilhoso, pessoas de confiança!! </br> Super rápido e fácil. </br> Solicitei ontem e hoje já caiu na minha conta, muito bom mesmo!</br>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000" style="height: 600px;background-image: url('images/fundo-branco-liso2-1024x1024.webp');">
+            <div class="container titulo-carousel">
+              <img style="border-radius: 50%; width:300px;" src="images/Clientes/deize.jpeg" alt="">
+              <h5>Deize Aparecida INSS</h5>
+              <div class="stars" style="padding: 1rem;">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+                <img style="width: 20px;" src="images/star.svg" alt="">
+              </div>
+              <p>O atendimento da Cred Help é excelente, a Rafaela me atendeu com toda atenção.
+              </br> Tudo bem explicado e com clareza,</br> recomendo e indico muito.</p>
+            </div>
+          </div>
         </div>
-       <div class="col-12 col-md-4">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima voluptate in repellendus quas at quis minus eius accusantium optio cupiditate placeat dolor rerum dicta ad ipsa officia laboriosam, tenetur distinctio?</p>
-        </div>
-    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
     <div class="bloco" >
       <div class="col-11 col-md-5 d-flex justify-content-center container">
@@ -200,13 +257,13 @@
           <p style="margin-left: 2rem;"><i class="fas fa-check"></i> MAIOR CREDIBILIDADE</p>
           <P style="margin-left: 2rem;"><i class="fas fa-check"></i> MAIS DINHEIRO NO SEU BOLSO</P>
           <p style="margin-left: 2rem;"><i class="fas fa-check"></i> MELHOR SUPORTE</p>
-          <p style="margin-left: 2rem;"><i class="fas fa-check"></i> AGILIDADE</p>
-          <p style="margin-left: 2rem;"><i class="fas fa-check"></i> CONFIANÇA</p>
-          
+          <p id="contato" style="margin-left: 2rem;"><i class="fas fa-check"></i> AGILIDADE</p>
+          <p  style="margin-left: 2rem;"><i class="fas fa-check"></i> CONFIANÇA</p>
+
         </div>
       </div>
     </div>
-    <div class="contato container">
+    <div class="contato container" >
       <div class="col-12 col-md-5 d-flex justify-content-center container" style="margin-bottom: 1rem;">
         <h3 class="main-title" style="padding: 1rem; margin-top: 1rem;"> Entre em Contato Conosco</h3>
         </div>
@@ -267,34 +324,20 @@
                       <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-envelope-open"></i></button>
                   </div>
               </div>
-              <div class="container col-12 col-md-3 r1">
-                  <div class="link-rodape"><a style="text-decoration: none; color: #fff;" href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">Livro de Reclamações </a></div>
-                  <div class="link-rodape"><a style="text-decoration: none; color: #fff;" href="politica.html" target="_blank">Política De Privacidade</a></div>
-                  <div class="link-rodape" onclick="showModal()" >Resolução de Conflitos</div>
-                </div>
+             
             </div>
           </div>
       </div>
   </div>
   <div class="rodape1">
     <div class="text-center">
-      <p class="copy">Copyright <i class="far fa-copyright"></i> 2022 CRED HELP.</p>
-    <p>Developed by JOAO CARLOS DENE</p>
+      <p class="copy">Copyright <i class="far fa-copyright"></i> 2022 CRED HELP  -  <a style="text-decoration: none; color: #fff;" href="politica.html" target="_blank">Política De Privacidade</a></p>
+      
+        
+    <p style="padding-bottom: 2rem;">Developed by JOAO CARLOS DENE</p>
     </div>
-    
-    
-      <div class="modal" id="modal">
-        <div class="modal-content">
-          <span onclick="hideModal()" class="fechar">&times;</span>
-          <p>Em caso de litígio o consumidor pode recorrer a uma Entidade de Resolução Alternativa de Litígios de consumo:</p>
-          <p>CICAP – Tribunal Arbitral de Consumo</br>
-            Rua Damião de Góis, 31, Loja 6, 4050-225, Porto</br>
-            +351 22 550 83 49 / +351 22 502 97 91</br> cicap@cicap.pt</p>
-            <p>Mais informações em Portal do Consumidor www.consumidor.pt</p>
-        </div>
-      </div>
-    
   </div>
+  <script>var purecookieTitle="Cookies.",purecookieDesc="Os cookies ajudam-nos a oferecer o melhor dos nossos serviços. </br>Ao utilizar a nossa página, concorda com nossa política de cookies.</br>",purecookieLink='<a href="https://www.cssscript.com/privacy-policy/" target="_blank">Política de Privacidade</a>',purecookieButton="Aceitar";function pureFadeIn(e,o){var i=document.getElementById(e);i.style.opacity=0,i.style.display=o||"block",function e(){var o=parseFloat(i.style.opacity);(o+=.02)>1||(i.style.opacity=o,requestAnimationFrame(e))}()}function pureFadeOut(e){var o=document.getElementById(e);o.style.opacity=1,function e(){(o.style.opacity-=.02)<0?o.style.display="none":requestAnimationFrame(e)}()}function setCookie(e,o,i){var t="";if(i){var n=new Date;n.setTime(n.getTime()+24*i*60*60*1e3),t="; expires="+n.toUTCString()}document.cookie=e+"="+(o||"")+t+"; path=/"}function getCookie(e){for(var o=e+"=",i=document.cookie.split(";"),t=0;t<i.length;t++){for(var n=i[t];" "==n.charAt(0);)n=n.substring(1,n.length);if(0==n.indexOf(o))return n.substring(o.length,n.length)}return null}function eraseCookie(e){document.cookie=e+"=; Max-Age=-99999999;"}function cookieConsent(){getCookie("purecookieDismiss")||(document.body.innerHTML+='<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>'+purecookieTitle+'</a></div><div class="cookieDesc"><p>'+purecookieDesc+" "+purecookieLink+'</p></div><div class="cookieButton"><a onClick="purecookieDismiss();">'+purecookieButton+"</a></div></div>",pureFadeIn("cookieConsentContainer"))}function purecookieDismiss(){setCookie("purecookieDismiss","1",1),pureFadeOut("cookieConsentContainer")}window.onload=function(){cookieConsent()};</script>
     <script src="script.js"></script>
 </body>
 </html>
